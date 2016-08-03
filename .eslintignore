@@ -1,0 +1,6 @@
+Gulpfile.js
+index.js
+config/**
+test/**
+build/**
+coverage/**

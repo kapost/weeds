@@ -1,0 +1,13 @@
+.weeds-default-loading-component,
+.weeds-default-failed-component {
+  .progress-message {
+    padding: 20px;
+
+    a,
+    a:visited {
+      font-style: italic;
+      font-weight: 600;
+      color: $blue;
+    }
+  }
+}

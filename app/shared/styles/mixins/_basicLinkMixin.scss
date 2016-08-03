@@ -1,0 +1,8 @@
+@mixin basic-link() {
+  color: $blue;
+  transition: 0.2s color;
+
+  &:hover {
+    color: $blue-darken-2;
+  }
+}

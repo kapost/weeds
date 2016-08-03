@@ -1,0 +1,21 @@
+// roll up pod
+@import "../emojis/styles/index";
+
+.weeds-examples-index-component {
+  position: relative;
+  height: 100%;
+  padding: 20px;
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    padding: 10px;
+    font-size: 16px;
+    list-style: circle;
+  }
+
+
+}

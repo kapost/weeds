@@ -1,0 +1,29 @@
+.weeds-example-emoji-component {
+  padding: 20px;
+
+  .back {
+    @include basic-link();
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .emoji {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+
+  button {
+    display: block;
+  }
+}

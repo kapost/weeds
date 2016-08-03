@@ -1,0 +1,54 @@
+########################
+# project files
+########################
+
+# build folders and files
+
+_book
+build
+coverage
+app/assets/svg/index.json
+
+.env.local
+
+config/cert/*
+!config/cert/.keep
+
+########################
+# node files
+########################
+
+# Dependency directory
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+########################
+# project and os files
+########################
+
+# Ignore application configuration
+.DS_Store
+
+# Ignore IDE files.
+/.idea

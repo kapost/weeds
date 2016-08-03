@@ -1,0 +1,33 @@
+// Top level SCSS file. All other files will be rolled up here (import pod entry files only).
+
+// Base utils (vars, colors, mixins, etc)
+@import "shared/styles/utils/variables";
+@import "shared/styles/mixins/index";
+
+// Reset
+@import "shared/styles/utils/reset";
+
+// Roll up files across the app
+@import "shared/styles/components/index";
+@import "examples/styles/index";
+
+.weeds-app-component {
+  height: 100%;
+  color: $blue-gray-darken-2;
+
+  &,
+  * {
+    box-sizing: border-box;
+  }
+
+  .kapost-logo {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    width: 200px;
+  }
+
+  a {
+    @include basic-link();
+  }
+}

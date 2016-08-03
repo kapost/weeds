@@ -1,0 +1,17 @@
+linters:
+  StringQuotes:
+    enabled: true
+    style: double_quotes
+  PropertySortOrder:
+    order: recess
+  LeadingZero:
+    style: include_zero
+  NestingDepth:
+    ignore_parent_selectors: true
+  HexNotation:
+    style: uppercase
+  HexLength:
+    style: long
+  NestingDepth:
+    ignore_parent_selectors: true
+    max_depth: 4

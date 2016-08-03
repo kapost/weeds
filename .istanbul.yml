@@ -1,0 +1,8 @@
+instrumentation:
+    root: ./app
+    include-all-sources: true
+    es-modules: true
+    excludes: ["**/*Spec.js", "**/*Spec.jsx"]
+    extensions:
+        - .js
+        - .jsx

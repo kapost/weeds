@@ -1,0 +1,29 @@
+// scss-lint:disable IdSelector
+
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  background-color: #F3F5F7;
+}
+
+html,
+body,
+#react-view {
+  width: 100%;
+  height: 100%;
+}
+
+// initialize default flex so IE10 matches standard
+// https://github.com/philipwalton/flexbugs#6-the-default-flex-value-has-changed
+* {
+  flex: 0 1 auto;
+}
+
+a {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+input {
+  font-family: inherit;
+}
