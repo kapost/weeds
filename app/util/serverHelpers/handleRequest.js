@@ -124,19 +124,19 @@ class RequestHandler {
     this.store.dispatch(updateUser(auth)); // populate store with auth response
   }
 
-  onUnauthorized(response) {
-    if (response.status === 401) {
+  onUnauthorized(error) {
+    if (error.response && error.response.status === 401) {
       const redirectUrl = `http://${this.req.hostname}${this.req.originalUrl}`;
       this.return302(`${redirectUrl}/signin/page/for/your/app`);
     } else {
-      throw response;
+      throw error;
     }
   }
 
-  onPromiseFailure(response) {
-    return throwHoneybadgerError(response, this.return500, {
+  onPromiseFailure(error) {
+    return throwHoneybadgerError(error, this.return500, {
       store: this.store.getState(),
-      caughtError: response
+      caughtError: error
     });
   }
 
